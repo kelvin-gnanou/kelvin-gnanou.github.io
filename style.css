@@ -485,6 +485,7 @@ td, th {
 
   .nav {
     gap: 12px 16px;
+    align-self: center;
   }
 
   .grid.two,
@@ -531,4 +532,20 @@ td, th {
     padding: 20px;
     border-radius: 22px;
   }
+}
+
+/* js */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav a.active {
+  color: #ffffff;
 }
