@@ -3,14 +3,37 @@
   justify-content: space-between;
   align-items: center;
   gap: 18px;
+  padding: clamp(24px, 5vw, 40px);
+  background:
+    radial-gradient(circle at 85% 0%, rgba(124, 92, 255, 0.15), transparent 36%),
+    linear-gradient(180deg, rgba(19, 27, 47, 0.84), rgba(12, 18, 32, 0.88));
 }
 
-.contact-card a {
+.contact-card h3 {
+  max-width: 30ch;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
   color: #cbbdff;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-td, th {
-  min-width: 150px;
-  text-align: left;
-  border: 0;
+.social-links a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(79, 209, 197, 0.35);
+  background: rgba(79, 209, 197, 0.08);
 }

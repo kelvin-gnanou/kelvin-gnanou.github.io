@@ -1,4 +1,3 @@
-.profile-card,
 .card,
 .project-card,
 .contact-card,
@@ -10,11 +9,6 @@
   backdrop-filter: blur(18px);
 }
 
-.profile-card {
-  padding: 26px;
-}
-
-.profile-badge,
 .project-tag {
   display: inline-flex;
   align-items: center;
@@ -26,56 +20,6 @@
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-}
-
-.profile-card h2 {
-  margin: 16px 0 10px;
-  font-size: 1.5rem;
-  line-height: 1.25;
-}
-
-.profile-card p {
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.profile-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 22px;
-}
-
-.profile-stats div {
-  padding: 14px;
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.profile-stats strong {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 0.9rem;
-}
-
-.profile-stats span {
-  color: var(--soft);
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.mini-grid {
-  display: grid;
-  gap: 14px;
-}
-
-.mini-grid img {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.02);
-  box-shadow: var(--shadow);
 }
 
 .card,

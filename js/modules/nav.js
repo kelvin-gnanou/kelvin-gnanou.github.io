@@ -1,8 +1,8 @@
-// Lien actif dans la navbar selon la section visible
-const sections = document.querySelectorAll(".section");
+// Met en evidence le lien de navigation de la section visible.
+const sections = document.querySelectorAll(".section[id]");
 const navLinks = document.querySelectorAll(".nav a[href^='#']");
 
-window.addEventListener("scroll", () => {
+function updateActiveLink() {
     let current = "";
 
     sections.forEach((section) => {
@@ -13,9 +13,16 @@ window.addEventListener("scroll", () => {
     });
 
     navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
+        const isActive = link.getAttribute("href") === `#${current}`;
+        link.classList.toggle("active", isActive);
+
+        if (isActive) {
+            link.setAttribute("aria-current", "location");
+        } else {
+            link.removeAttribute("aria-current");
         }
     });
-});
+}
+
+window.addEventListener("scroll", updateActiveLink, { passive: true });
+updateActiveLink();

@@ -1,6 +1,6 @@
 import "./modules/nav.js";
 
-// Smooth reveal des sections au scroll
+// Revele les sections lorsqu'elles entrent dans l'ecran.
 const sections = document.querySelectorAll(".section");
 
 const observer = new IntersectionObserver(
@@ -21,7 +21,7 @@ sections.forEach((section) => {
     observer.observe(section);
 });
 
-// Année automatique dans le footer
+// Met a jour l'annee dans le pied de page.
 const footer = document.querySelector(".footer p");
 if (footer) {
     const year = new Date().getFullYear();

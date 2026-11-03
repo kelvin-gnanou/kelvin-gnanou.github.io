@@ -1,4 +1,4 @@
-/* js */
+/* Classes ajoutees par js/main.js pour l'apparition des sections. */
 .hidden {
   opacity: 0;
   transform: translateY(30px);
@@ -8,4 +8,25 @@
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Respecte la preference de mouvement du navigateur. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .hidden {
+    opacity: 1;
+    transform: none;
+  }
 }

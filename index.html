@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of GNANOU KOKOU KELVIN AMBROISE — Computer Engineering Student focused on Software Engineering, Systems Programming, and AI." />
+  <meta name="description" content="Portfolio of Kelvin Gnanou, a computer engineering student focused on artificial intelligence, data science, and machine learning." />
+
   <title>Kelvin Gnanou | Portfolio</title>
   <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -14,13 +16,15 @@
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
 
+  <a class="skip-link" href="#home">Skip to content</a>
+
   <header class="topbar">
     <a class="brand" href="#home">
       <span class="brand-mark">K</span>
       <span class="brand-text">Kelvin Gnanou</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -29,85 +33,57 @@
     </nav>
   </header>
 
-  <main id="home" class="container">
+  <main id="home" class="container" tabindex="-1">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Computer Engineering Student · Software Engineering · Systems Programming</p>
+        <p class="eyebrow"><span class="status-dot"></span> Computer Engineering Student · AI & Data</p>
         <h1>
-          Building scalable systems with a strong engineering mindset.
+          Building a future in <span class="hero-highlight">AI & data.</span>
         </h1>
         <p class="hero-text">
-          I focus on low-level programming, data structures, algorithms, maintainable architecture,
-          and reproducible development environments. My path is oriented toward backend systems and artificial intelligence.
+          I’m pursuing a career in artificial intelligence and data, building strong foundations in Python, algorithms, and analytical problem solving.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/kelvin-gnanou" target="_blank" rel="noreferrer">GitHub Profile</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/kelvin-gnanou-a1755b40b/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-primary" href="#projects">View selected work <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="mailto:kelvin.gnanou.dev@gmail.com">Get in touch</a>
         </div>
 
-        <div class="hero-pills" aria-label="Core technologies">
+        <div class="hero-pills" aria-label="Languages and tools">
+          <span class="pills-label">Languages & tools</span>
           <span>C</span>
           <span>C++</span>
           <span>Python</span>
           <span>Linux</span>
-          <span>Git</span>
-          <span>Makefile</span>
         </div>
       </div>
 
       <aside class="hero-panel">
-        <div class="profile-card">
-          <div class="profile-badge">Systems-first mindset</div>
-          <h2>GNANOU KOKOU KELVIN AMBROISE</h2>
-          <p>
-            Software engineering student focused on strong foundations, reliable tooling,
-            and disciplined code quality.
-          </p>
-
-          <div class="profile-stats">
-            <div>
-              <strong>Core Stack</strong>
-              <span>C • C++ • Python • Linux</span>
-            </div>
-            <div>
-              <strong>Engineering</strong>
-              <span>Data Structures • Tooling • Debugging</span>
-            </div>
-            <div>
-              <strong>Focus</strong>
-              <span>Backend & AI</span>
-            </div>
+        <div class="portrait-card">
+          <img src="assets/images/profile.jpeg" alt="Portrait of Kelvin Gnanou" width="1254" height="1254" fetchpriority="high" />
+          <div class="portrait-caption">
+            <span class="portrait-kicker">AI · Data · Machine Learning</span>
+            <h2>Kelvin Gnanou</h2>
+            <p>Exploring intelligent systems through data and experimentation.</p>
           </div>
         </div>
 
-        <div class="mini-grid">
-          <img
-            src="https://github-readme-stats-sigma-five.vercel.app/api?username=kelvin-gnanou&show_icons=true&theme=github_dark"
-            alt="GitHub stats"
-          />
-          <img
-            src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=kelvin-gnanou&layout=compact&theme=github_dark"
-            alt="Top languages"
-          />
-        </div>
+        <div class="hero-note"><span aria-hidden="true">✳</span> Learning through data, models, and experimentation.</div>
       </aside>
     </section>
 
     <section id="about" class="section">
       <div class="section-head">
         <p class="section-kicker">About</p>
-        <h2>Engineering discipline first.</h2>
+        <h2>Focused on AI & data.</h2>
       </div>
 
       <div class="card large">
         <p>
-          I am a computer engineering student building a solid technical base in software engineering,
-          data structures, algorithms, system-level thinking, and reproducible development practices.
+          I’m a computer engineering student preparing for a career in AI and data. My foundations include Python, algorithms, data structures, and SQL.
         </p>
         <p>
-          My work style emphasizes modular architecture, maintainability, performance awareness, clean code,
-          and structured tooling. I prefer building foundations properly before moving into complexity.
+          I aim to apply these skills to data analysis and machine learning, developing practical solutions through careful experimentation.
         </p>
       </div>
     </section>
@@ -115,7 +91,7 @@
     <section id="skills" class="section">
       <div class="section-head">
         <p class="section-kicker">Skills</p>
-        <h2>Core competencies</h2>
+        <h2>Technical foundations</h2>
       </div>
 
       <div class="grid three">
@@ -157,8 +133,8 @@
 
     <section id="projects" class="section">
       <div class="section-head">
-        <p class="section-kicker">Featured Projects</p>
-        <h2>Projects that show technical depth</h2>
+        <p class="section-kicker">Selected projects & practice</p>
+        <h2>Building foundations for AI & data</h2>
       </div>
 
       <div class="grid two">
@@ -168,8 +144,7 @@
             <h3>Data Structures in C</h3>
           </div>
           <p>
-            Low-level implementations of fundamental data structures with a strong focus on memory management,
-            modular design, and internal understanding of how things work under the hood.
+            Core data structures implemented in C, strengthening my understanding of memory, algorithms, and how data is organized.
           </p>
           <ul class="list compact">
             <li>Linked lists</li>
@@ -186,8 +161,7 @@
             <h3>Dev Environment Engineering</h3>
           </div>
           <p>
-            A structured C/C++ development environment focused on reproducibility, debugging, formatting,
-            warning management, and clean project organization.
+            A reproducible Linux toolchain for C/C++ development, with a focus on debugging, build workflows, and reliable experimentation.
           </p>
           <ul class="list compact">
             <li>Toolchain setup</li>
@@ -204,8 +178,7 @@
             <h3>Python Utilities & Automation</h3>
           </div>
           <p>
-            Structured scripts built to automate repetitive tasks, improve workflow efficiency,
-            and strengthen practical Python engineering habits.
+            Small Python scripts for file handling, CLI workflows, and task automation—practice with data and repeatable processes.
           </p>
           <ul class="list compact">
             <li>File handling</li>
@@ -220,8 +193,7 @@
             <h3>Web Interfaces</h3>
           </div>
           <p>
-            Small front-end interfaces used to practice responsive layouts, DOM manipulation,
-            and clean visual structure.
+            Front-end practice in responsive layouts and DOM interaction, with an emphasis on presenting information clearly.
           </p>
           <ul class="list compact">
             <li>Responsive UI</li>
@@ -234,31 +206,30 @@
 
     <section id="vision" class="section">
       <div class="section-head">
-        <p class="section-kicker">Current Focus</p>
-        <h2>Where I am investing effort now</h2>
+        <p class="section-kicker">AI & Data Focus</p>
+        <h2>The direction I’m working toward</h2>
       </div>
 
       <div class="grid two">
         <article class="card accent">
-          <h3>Actively working on</h3>
+          <h3>Building foundations</h3>
           <ul class="list">
-            <li>Memory management in C</li>
-            <li>Data structure implementations</li>
-            <li>Linux development environment optimization</li>
-            <li>Python automation tools</li>
-            <li>Backend engineering fundamentals</li>
+            <li>Python for data workflows</li>
+            <li>SQL and data organization</li>
+            <li>Statistics and analytical thinking</li>
+            <li>Algorithms and data structures</li>
+            <li>Machine learning fundamentals</li>
           </ul>
         </article>
 
         <article class="card accent">
-          <h3>Focus areas</h3>
+          <h3>Career direction</h3>
           <ul class="list">
-            <li>Backend systems</li>
-            <li>Algorithms & performance</li>
-            <li>Low-level programming</li>
-            <li>Software architecture</li>
-            <li>AI fundamentals</li>
-            <li>Clean code and maintainability</li>
+            <li>Artificial intelligence</li>
+            <li>Data science and analysis</li>
+            <li>Applied machine learning</li>
+            <li>Data-driven problem solving</li>
+            <li>Building useful tools with data</li>
           </ul>
         </article>
       </div>
@@ -266,14 +237,14 @@
 
     <section class="section">
       <div class="section-head">
-        <p class="section-kicker">Engineering Philosophy</p>
-        <h2>How I build</h2>
+        <p class="section-kicker">Learning Philosophy</p>
+        <h2>How I approach AI & data</h2>
       </div>
 
       <div class="quote-card">
-        <p>Build clean before building complex.</p>
-        <p>Understand fundamentals deeply. Prefer maintainable systems over quick hacks.</p>
-        <p>Focus on reproducibility, tooling, and continuous improvement.</p>
+        <p>Start with the data. Understand the problem. Build with purpose.</p>
+        <p>Strong foundations make useful models possible.</p>
+        <p>Learn deeply, experiment carefully, and measure what matters.</p>
       </div>
     </section>
 
@@ -285,26 +256,15 @@
 
       <div class="contact-card">
         <div>
-          <h3>Open to opportunities, collaboration, and technical exchange.</h3>
-          <table>
-              <thead>
-                <tr>
-                  <th>Social</th>
-                  <th>Link</th>
-                </tr>
-              </thead>
-          
-              <tbody>
-                <tr>
-                  <td>GitHub</td>
-                  <td><a href="https://github.com/kelvin-gnanou" target="_blank" rel="noreferrer">github.com/kelvin-gnanou</a></td>
-                </tr>
-                <tr>
-                  <td>LinkedIn</td>
-                  <td><a href="https://www.linkedin.com/in/kelvin-gnanou-a1755b40b/" target="_blank" rel="noreferrer">linkedin.com/in/kelvin-gnanou</a></td>
-                </tr>
-              </tbody>
-          </table>
+          <h3>Open to opportunities and collaboration in AI and data.</h3>
+          <nav class="social-links" aria-label="Social profiles">
+            <a href="https://github.com/kelvin-gnanou" target="_blank" rel="noreferrer">
+              <span>GitHub</span><span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kelvin-gnanou-a1755b40b/" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span><span aria-hidden="true">↗</span>
+            </a>
+          </nav>
         </div>
 
         <a class="btn btn-primary" href="mailto:kelvin.gnanou.dev@gmail.com">Send an Email</a>
@@ -313,7 +273,7 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 Kelvin Gnanou · Built with discipline, clarity, and engineering focus.</p>
+    <p>© 2026 Kelvin Gnanou · Building toward a career in AI & data.</p>
   </footer>
 
   <script type="module" src="js/main.js"></script>

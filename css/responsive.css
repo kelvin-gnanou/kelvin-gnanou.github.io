@@ -1,0 +1,135 @@
+/* Tablettes et petits ordinateurs */
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 40px;
+    padding-top: 42px;
+  }
+
+  .hero-copy h1 {
+    max-width: 14ch;
+  }
+
+  .hero-panel {
+    justify-self: center;
+    max-width: 560px;
+  }
+
+  .portrait-card {
+    min-height: 560px;
+  }
+}
+
+/* Tablettes */
+@media (max-width: 860px) {
+  html {
+    scroll-padding-top: 8rem;
+  }
+
+  .topbar {
+    border-radius: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    gap: 12px 16px;
+    align-self: center;
+  }
+
+  .grid.three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Telephones */
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 10rem;
+  }
+
+  .container,
+  .topbar {
+    width: min(100% - 22px, var(--container));
+  }
+
+  .container {
+    padding-top: 18px;
+  }
+
+  .hero {
+    gap: 32px;
+    padding-top: 30px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.75rem, 13vw, 4.25rem);
+  }
+
+  .eyebrow {
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+  }
+
+  .grid.two,
+  .grid.three {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .portrait-card {
+    min-height: min(118vw, 500px);
+    border-radius: 26px;
+  }
+
+  .portrait-caption {
+    right: 22px;
+    bottom: 22px;
+    left: 22px;
+  }
+
+  .card,
+  .project-card,
+  .contact-card,
+  .quote-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+}
+
+/* Petits telephones */
+@media (max-width: 380px) {
+  .topbar {
+    padding: 12px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-text {
+    font-size: 0.92rem;
+  }
+
+  .nav {
+    gap: 10px 12px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.4rem, 12vw, 2.9rem);
+  }
+}
