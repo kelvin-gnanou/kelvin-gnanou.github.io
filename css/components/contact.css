@@ -1,0 +1,16 @@
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.contact-card a {
+  color: #cbbdff;
+}
+
+td, th {
+  min-width: 150px;
+  text-align: left;
+  border: 0;
+}

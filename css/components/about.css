@@ -1,0 +1,130 @@
+.profile-card,
+.card,
+.project-card,
+.contact-card,
+.quote-card {
+  background: linear-gradient(180deg, rgba(19, 27, 47, 0.84), rgba(12, 18, 32, 0.88));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.profile-card {
+  padding: 26px;
+}
+
+.profile-badge,
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(124, 92, 255, 0.12);
+  color: #d9d0ff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.profile-card h2 {
+  margin: 16px 0 10px;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.profile-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.profile-stats div {
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.profile-stats strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.profile-stats span {
+  color: var(--soft);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.mini-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.mini-grid img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: var(--shadow);
+}
+
+.card,
+.project-card,
+.contact-card,
+.quote-card {
+  padding: 24px;
+}
+
+.card.large {
+  display: grid;
+  gap: 14px;
+}
+
+.card p,
+.project-card p,
+.contact-card p,
+.quote-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.card h3,
+.project-card h3,
+.contact-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.list {
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.list.compact li {
+  margin-bottom: 4px;
+}
