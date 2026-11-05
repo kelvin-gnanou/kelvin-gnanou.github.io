@@ -6,8 +6,6 @@
 
 ### Computer Engineering Student
 
-Building a foundation in Python, data analysis, and machine learning.
-
 <br>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-7c5cff?style=for-the-badge)](https://kelvin-gnanou.github.io)
@@ -26,7 +24,7 @@ Building a foundation in Python, data analysis, and machine learning.
 
 ## About
 
-I’m a computer engineering student working toward a career in artificial intelligence and data. I’m developing foundations in Python, algorithms, data structures, SQL, and analytical problem solving.
+I'm a computer engineering student preparing for a career in AI and data. My foundations include Python, algorithms, data structures, and SQL.
 
 ## Focus Areas
 
@@ -52,7 +50,6 @@ Implementations of linked lists, stacks, queues, and trees, with practice in mem
 
 [View repository](https://github.com/dann-H7/data-struct)
 
-Additional practice includes Python automation, C/C++ development tooling, and responsive web interfaces.
 
 ## Run Locally
 
@@ -74,17 +71,27 @@ Open `http://localhost:8000` in a browser. Use a local server so the JavaScript 
 │   └── images/
 │       ├── preview.png
 │       └── profile.jpeg
-├── css/
-│   ├── base/
-│   ├── components/
+├── css
+│   ├── base
+│   │   ├── base.css
+│   │   ├── reset.css
+│   │   └── tokens.css
+│   ├── components
+│   │   ├── buttons.css
+│   │   ├── cards.css
+│   │   ├── contact.css
+│   │   ├── hero.css
+│   │   ├── nav.css
+│   │   ├── portrait.css
+│   │   └── projects.css
 │   ├── layout.css
 │   ├── main.css
 │   ├── responsive.css
 │   └── utilities.css
-├── js/
+├── js
 │   ├── main.js
-│   └── modules/nav.js
-├── .gitignore
+│   └── modules
+│       └── nav.js
 ├── LICENSE
 └── README.md
 ```
@@ -95,7 +102,7 @@ The portfolio is a static site published with GitHub Pages. Configure Pages to p
 
 ## Contact
 
-- Email: [kelvin.gnanou.dev@gmail.com](mailto:kelvin.gnanou.dev@gmail.com)
+- [Email](mailto:kelvin.gnanou.dev@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/kelvin-gnanou-a1755b40b/)
 
 ## License

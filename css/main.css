@@ -1,13 +1,16 @@
-/* Ordre des imports : base, composants, mise en page, responsive, utilitaires. */
+/* Ordre des imports : base, composants, mise en page, responsive, utilitaires */
 @import url("./base/reset.css");
 @import url("./base/tokens.css");
 @import url("./base/base.css");
+
 @import url("./components/nav.css");
 @import url("./components/hero.css");
+@import url("./components/portrait.css");
 @import url("./components/buttons.css");
-@import url("./components/about.css");
+@import url("./components/cards.css");
 @import url("./components/projects.css");
 @import url("./components/contact.css");
+
 @import url("./layout.css");
 @import url("./responsive.css");
 @import url("./utilities.css");

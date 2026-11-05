@@ -1,19 +1,21 @@
 import "./modules/nav.js";
 
-// Revele les sections lorsqu'elles entrent dans l'ecran.
+/* Revele les sections lorsqu'elles entrent dans l'ecran. */
 const sections = document.querySelectorAll(".section");
+
+// Vérifier manuellement la position des éléments.
+// window.addEventListener("scroll", () => {
+// });
 
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
         });
     },
-    {
-        threshold: 0.15,
-    }
+    { threshold: 0.15,}
 );
 
 sections.forEach((section) => {
@@ -21,9 +23,10 @@ sections.forEach((section) => {
     observer.observe(section);
 });
 
-// Met a jour l'annee dans le pied de page.
+/* Met a jour l'annee dans le pied de page. */
 const footer = document.querySelector(".footer p");
 if (footer) {
     const year = new Date().getFullYear();
-    footer.textContent = footer.textContent.replace("2026", year);
+    document.querySelector("#year").textContent =
+    new Date().getFullYear();
 }

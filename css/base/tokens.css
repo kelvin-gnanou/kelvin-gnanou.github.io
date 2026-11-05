@@ -1,19 +1,19 @@
 :root {
-  --bg: #070b14;
-  --bg-soft: rgba(10, 16, 28, 0.72);
-  --card: rgba(14, 22, 40, 0.72);
-  --card-strong: rgba(16, 26, 48, 0.9);
-  --border: rgba(255, 255, 255, 0.08);
-  --text: #eaf0ff;
-  --muted: rgba(234, 240, 255, 0.72);
-  --soft: rgba(234, 240, 255, 0.52);
-  --primary: #7c5cff;
-  --primary-2: #4fd1c5;
-  --accent: #9f7aea;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-  --radius-xl: 28px;
-  --radius-lg: 20px;
-  --radius-md: 16px;
-  --radius-sm: 12px;
-  --container: 1180px;
+  --bg: #070b14;                         /* Couleur principale du fond */
+  --bg-soft: rgba(10, 16, 28, 0.72);    /* Fond sombre semi-transparent */
+  --card: rgba(14, 22, 40, 0.72);       /* Fond des cartes */
+  --card-strong: rgba(16, 26, 48, 0.9); /* Fond des cartes plus opaque */
+  --border: rgba(255, 255, 255, 0.08);  /* Couleur des bordures */
+  --text: #eaf0ff;                      /* Couleur principale du texte */
+  --muted: rgba(234, 240, 255, 0.72);  /* Texte secondaire */
+  --soft: rgba(234, 240, 255, 0.52);   /* Texte moins visible */
+  --primary: #7c5cff;                   /* Couleur principale (violet) */
+  --primary-2: #4fd1c5;                 /* Couleur secondaire (turquoise) */
+  --accent: #9f7aea;                    /* Couleur d'accentuation */
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35); /* Ombre des elements */
+  --radius-xl: 28px;                    /* Tres grands coins arrondis */
+  --radius-lg: 20px;                    /* Grands coins arrondis */
+  --radius-md: 16px;                    /* Coins moyennement arrondis */
+  --radius-sm: 12px;                    /* Petits coins arrondis */
+  --container: 1180px;                   /* Largeur maximale du contenu */
 }

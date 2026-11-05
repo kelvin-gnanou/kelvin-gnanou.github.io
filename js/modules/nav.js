@@ -14,7 +14,7 @@ function updateActiveLink() {
 
     navLinks.forEach((link) => {
         const isActive = link.getAttribute("href") === `#${current}`;
-        link.classList.toggle("active", isActive);
+        link.classList.toggle("active", isActive); // Ajout de la class active
 
         if (isActive) {
             link.setAttribute("aria-current", "location");
