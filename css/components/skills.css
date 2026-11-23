@@ -1,0 +1,20 @@
+/* rules for current work section */
+
+.skills-note {
+  margin-top: 1.75rem;
+  padding: 1rem 1.25rem;
+
+  border-left: 3px solid #36B9E9;
+  border-radius: 0 8px 8px 0;
+
+  background: rgba(54, 185, 233, 0.06);
+  color: #AAB8CE;
+  
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.skills-note strong {
+  color: #8CCFFF;
+  font-weight: 600;
+}
